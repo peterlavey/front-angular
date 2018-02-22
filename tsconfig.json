@@ -16,9 +16,10 @@
       "dom"
     ]
   },
-  "baseUrl": "src",
+  "baseUrl": ".",
   "paths": {
     "@app/*": ["app/*"],
-    "@env/*": ["environments/*"]
+    "@env/*": ["environments/*"],
+    "@vendor/*": ["node_modules/*"]
   }
 }
