@@ -14,12 +14,12 @@
     "lib": [
       "es2017",
       "dom"
-    ]
-  },
-  "baseUrl": ".",
-  "paths": {
-    "@app/*": ["app/*"],
-    "@env/*": ["environments/*"],
-    "@vendor/*": ["node_modules/*"]
+    ],
+    "baseUrl": "src",
+    "paths": {
+      "@app": ["app/*"],
+      "@env/*": ["environments/*"],
+      "@vendor/*": ["node_modules/*"]
+    }
   }
 }
