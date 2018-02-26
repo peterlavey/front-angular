@@ -2,21 +2,19 @@
 
 <mat-card>
   <mat-card-content>
-    <mat-form-field class="example-full-width">
+    <mat-form-field>
       <input matInput placeholder="Input">
     </mat-form-field>
 
-    <mat-form-field class="example-full-width">
+    <mat-form-field>
       <input matInput maxlength="5" placeholder="Limite de caracteres (5)">
     </mat-form-field>
 
-    <mat-form-field class="example-full-width">
+    <mat-form-field>
       <input matInput [formControl]="email" placeholder="Valida Correo">
     </mat-form-field>
 
-    <mat-form-field class="example-full-width">
-      <app-input-rut></app-input-rut>
-    </mat-form-field>
+    <app-input-rut [rut]="rut"></app-input-rut>
   </mat-card-content>
 
   <mat-card-content>
