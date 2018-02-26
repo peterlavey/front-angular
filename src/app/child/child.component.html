@@ -14,7 +14,8 @@
       <input matInput [formControl]="email" placeholder="Valida Correo">
     </mat-form-field>
 
-    <app-input-rut [rut]="rut"></app-input-rut>
+    <app-input-rut [rut]="rut" (state)="test = $event"></app-input-rut>
+    <mat-hint>Estado del input RUT: {{test}}</mat-hint>
   </mat-card-content>
 
   <mat-card-content>
