@@ -7,22 +7,33 @@ import { ExampleComponent } from './example/example.component';
 import { ChildComponent } from './child/child.component';
 
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
-import { MatInputModule} from '@angular/material';
+import { FormsModule, ReactiveFormsModule } from '@angular/forms';
 
+import { MatInputModule, MatSelectModule, MatCardModule } from '@angular/material';
+import { InputRutComponent } from './input-rut/input-rut.component';
 
 @NgModule({
   declarations: [
     AppComponent,
     ExampleComponent,
-    ChildComponent
+    ChildComponent,
+    InputRutComponent
   ],
   imports: [
     BrowserModule,
     BrowserAnimationsModule,
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatCardModule
   ],
   exports: [
-    MatInputModule
+    MatInputModule,
+    FormsModule,
+    ReactiveFormsModule,
+    MatSelectModule,
+    MatCardModule
   ],
   providers: [],
   bootstrap: [AppComponent]
